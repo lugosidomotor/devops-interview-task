@@ -1,0 +1,43 @@
+- find out distribution of current machine
+- find out kernel version
+- find out swap size and fre swap space
+- find out how many processes are running on system
+- find out nameserver(s) configured on this system
+- ping default gateway on system
+- find out current CPU utilization, identify process consuming most CPU
+- find out current I/O wait. Explain what does it mean
+- print all routing information
+- show all network interfaces
+- set output of command uptime to variable FOO and print the variable
+- create shell script (bash shebang) make it executable. This script should print numbers from 1 to 10
+- create bash script with error (command with RC != 0 ) command inside and uptime command. run the script and redirect STDERR to /dev/null
+- create LOCAL git repository, add file and commit to it
+- merge new_branch in ~/git-repo to master
+
+--------------------------------------------------------------
+
+-- kubeconfig is in ~/KUBECONFIG - configure it to use with kubectl
+- enable bash autocompletion for kubectl
+- create alias k for kubectl (make autocompletion work for k alias)
+- find out kubernetes client / server version
+- explain what is resource quota
+- list all pods in kube-system namespace
+- what is kubelet ?
+- k8s components and their purpose:
+        - kube-apiserver
+        - kube-scheduler
+        - kube-controller-manager
+- what is difference between daemonset and deployment ?
+- what is etcd ?
+- what are services
+- what are endpoints
+- explain what are taints in kubernetes
+- what is the init container and when it can be used
+- what is operator and why do we need it
+- Create a new namespace called "test-1"
+        - In this namespace, deploy two pods:
+        - One pod with a label of Tier=Web
+        - One pod with a label of Tier=App
+        - Use any container image you want (recommendation: nginx).
+        - Check state of both containers
+        - List all pods from all namespaces that have label "Tier=Web"
